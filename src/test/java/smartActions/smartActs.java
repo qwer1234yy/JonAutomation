@@ -7,7 +7,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class smartActs {
-	WebDriver driver;
+	
+	private WebDriver driver;
 
 	// check page title
 	public void waitPageTitle(String title) {
