@@ -11,7 +11,7 @@ public class smartActs {
 	private WebDriver driver;
 
     WebDriverWait wait = new WebDriverWait(driver, 5);
-
+    
 
 	// check page title
 	public void waitPageTitle(String title) {
