@@ -57,7 +57,7 @@ public class Login_TestNG {
 
 	@BeforeTest
 	public void beforeTest() {
-		System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "MyResources/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get("http://strzw058051/SMARTSolutions/");
 	}
