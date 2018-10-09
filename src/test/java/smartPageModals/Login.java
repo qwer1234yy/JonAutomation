@@ -21,6 +21,9 @@ public class Login {
 	WebElement loginBtn;
 	
 	public void login(WebDriver driver) {
+		
+		
+		smartActsWait.waitPageTitleContains(driver, "SMART");
 		username.clear();
 		username.click();
 		username.sendKeys("admin");
@@ -28,8 +31,11 @@ public class Login {
 		password.click();
 		password.sendKeys("Admin");
 		loginBtn.click();
+		
+		
+		
 		System.out.println("afterLogin-WaitPageLoadStarted");
-		smartActsWait.WaitPageLoadCompleted(driver);
+		smartActsWait.WaitPageLoadCompleted(driver,1);
 		System.out.println("afterLogin-WaitPageLoadCompleted");
 	}
 

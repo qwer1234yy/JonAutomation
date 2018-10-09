@@ -19,15 +19,17 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
 
 public class Login_TestNG {
+	
+	WebDriver driver;
+	
 //	(dataProvider = "dp")
 	@Test
 	public void login() throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
-		driver.get("http://strzw058051/SMARTSolutions/");
+		
 		System.out.println("WaitPageLoadStarted");
-		smartActsWait.WaitPageLoadCompleted(driver);
+		smartActsWait.WaitPageLoadCompleted(driver,1);
 		System.out.println("WaitPageLoadCompleted");
+		
 		Login login = PageFactory.initElements(driver, Login.class);
 		login.login(driver);
 	}
@@ -55,6 +57,9 @@ public class Login_TestNG {
 
 	@BeforeTest
 	public void beforeTest() {
+		System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.get("http://strzw058051/SMARTSolutions/");
 	}
 
 	@AfterTest
