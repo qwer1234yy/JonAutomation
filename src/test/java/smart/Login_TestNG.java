@@ -2,6 +2,7 @@ package smart;
 
 import org.testng.annotations.Test;
 
+import smartActions.smartActsWait;
 import smartPageModals.Login;
 
 import org.testng.annotations.BeforeMethod;
@@ -19,54 +20,53 @@ import org.testng.annotations.AfterSuite;
 
 public class Login_TestNG {
 //	(dataProvider = "dp")
-  @Test
-  public void login() throws InterruptedException {
-	     System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");		
-	   	 WebDriver driver = new FirefoxDriver();
-	   	 driver.get("http://strzw058051/SMARTSolutions/");
-	   	 Thread.sleep(2000);
-	   	 
-	   	 Login login = PageFactory.initElements(driver, Login.class);
-	   	 login.login();
-  }
-  @BeforeMethod
-  public void beforeMethod() {
-  }
+	@Test
+	public void login() throws InterruptedException {
+		System.setProperty("webdriver.gecko.driver", "resources/geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://strzw058051/SMARTSolutions/");
+		System.out.println("WaitPageLoadStarted");
+		smartActsWait.WaitPageLoadCompleted(driver);
+		System.out.println("WaitPageLoadCompleted");
+		Login login = PageFactory.initElements(driver, Login.class);
+		login.login(driver);
+	}
 
-  @AfterMethod
-  public void afterMethod() {
-  }
+	@BeforeMethod
+	public void beforeMethod() {
+	}
 
+	@AfterMethod
+	public void afterMethod() {
+	}
 
-  @DataProvider
-  public Object[][] dp() {
-    return new Object[][] {
-      new Object[] { 1, "a" },
-      new Object[] { 2, "b" },
-    };
-  }
-  @BeforeClass
-  public void beforeClass() {
-  }
+	@DataProvider
+	public Object[][] dp() {
+		return new Object[][] { new Object[] { 1, "a" }, new Object[] { 2, "b" }, };
+	}
 
-  @AfterClass
-  public void afterClass() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+	}
 
-  @BeforeTest
-  public void beforeTest() {
-  }
+	@AfterClass
+	public void afterClass() {
+	}
 
-  @AfterTest
-  public void afterTest() {
-  }
+	@BeforeTest
+	public void beforeTest() {
+	}
 
-  @BeforeSuite
-  public void beforeSuite() {
-  }
+	@AfterTest
+	public void afterTest() {
+	}
 
-  @AfterSuite
-  public void afterSuite() {
-  }
+	@BeforeSuite
+	public void beforeSuite() {
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+	}
 
 }
