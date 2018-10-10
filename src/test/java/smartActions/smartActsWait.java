@@ -30,15 +30,27 @@ public class smartActsWait {
 		wait = new WebDriverWait(driver, second);
 		wait.until(new ExpectedCondition<Boolean>() {
 
-			public Boolean apply(WebDriver input) {
+			public Boolean apply(WebDriver driver) {
 				// TODO Auto-generated method stub
-				boolean flag = ((JavascriptExecutor) input).executeScript("return document.readyState").equals("complete");
+				boolean flag = ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
 				System.out.println(flag);
 				return flag;
 			}
 		});
 	}
+	// check if string contained in page source
+	public static void TextContainedInPageSource(WebDriver driver, String text, int second) {
+		wait = new WebDriverWait(driver, second);
+		wait.until(new ExpectedCondition<Boolean>() {
 
+			public Boolean apply(WebDriver driver) {
+				// TODO Auto-generated method stub
+				boolean flag = driver.getPageSource().contains("I forgot");
+				System.out.println("I forgot+++"+flag);
+				return flag;
+			}
+		});
+	}
 	// check page title
 	public static void waitPageTitle(WebDriver driver, String title) {
 		new WebDriverWait(driver, 1).until(ExpectedConditions.titleIs(title));
@@ -52,6 +64,8 @@ public class smartActsWait {
 	// check if element is contained in the dom, it may be not visible
 	public static void waitPresenceOfElementLocated(WebDriver driver, By by) {
 		new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(by));
+		System.out.println("ExpectedConditions.presenceOfElementLocated(by)---"+ExpectedConditions.presenceOfElementLocated(by));
+		System.out.println("我忘了密码:"+driver.getPageSource().contains("I forgot")); 
 	}
 
 	// check if element is visible or not
