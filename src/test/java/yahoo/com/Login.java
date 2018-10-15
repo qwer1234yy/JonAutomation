@@ -2,6 +2,7 @@ package yahoo.com;
 
 import org.testng.annotations.Test;
 
+import AutoCommon.Drivers;
 import smartActions.smartActsWait;
 import yahooPO.LogIn;
 
@@ -28,7 +29,8 @@ public class Login {
      aLogin.sendEmail("robby_yang@yahoo.com");
      aLogin.toNext(driver);
      aLogin.sendPassword("yahooRB123");
-//     aLogin.submit();
+     aLogin.submit();
+     smartActsWait.TextContainedInPageSource(driver, "Make Yahoo Your Homepage", 1);
   }
   @BeforeMethod
   public void beforeMethod() {
@@ -57,8 +59,9 @@ public class Login {
   @BeforeTest
   public void beforeTest() {
 //	  webdriver.ie.driver
-	  System.setProperty("webdriver.chrome.driver", "MyResources/chromedriver.exe");
-	  driver = new ChromeDriver();
+//	  System.setProperty("webdriver.chrome.driver", "MyResources/chromedriver.exe");
+//	  driver = new ChromeDriver();
+	  driver = Drivers.getFirefoxDriver();
 	  driver.get("https://login.yahoo.com/");
 //	  smartActsWait.WaitPageLoadCompleted(driver, 1);
   }

@@ -39,13 +39,14 @@ public class smartActsWait {
 		});
 	}
 	// check if string contained in page source
-	public static void TextContainedInPageSource(WebDriver driver, String text, int second) {
+	public static void TextContainedInPageSource(WebDriver driver, final String text, int second) {
 		wait = new WebDriverWait(driver, second);
+		boolean flag;
 		wait.until(new ExpectedCondition<Boolean>() {
 
 			public Boolean apply(WebDriver driver) {
 				// TODO Auto-generated method stub
-				boolean flag = driver.getPageSource().contains("I forgot");
+				boolean flag = driver.getPageSource().contains(text);
 				System.out.println("I forgot+++"+flag);
 				return flag;
 			}

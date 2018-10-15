@@ -2,48 +2,48 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15009" started-at="2018-10-09T10:39:56Z" finished-at="2018-10-09T10:40:11Z">
+  <suite name="Default suite" duration-ms="46925" started-at="2018-10-10T02:28:23Z" finished-at="2018-10-10T02:29:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15009" started-at="2018-10-09T10:39:56Z" finished-at="2018-10-09T10:40:11Z">
-      <class name="smart.Login_TestNG">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2018-10-09T10:39:56Z" finished-at="2018-10-09T10:39:56Z">
+    <test name="Default test" duration-ms="46925" started-at="2018-10-10T02:28:23Z" finished-at="2018-10-10T02:29:10Z">
+      <class name="yahoo.com.Login">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="beforeSuite" is-config="true" duration-ms="14" started-at="2018-10-10T02:28:23Z" finished-at="2018-10-10T02:28:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="beforeTest" is-config="true" duration-ms="13971" started-at="2018-10-09T10:39:56Z" finished-at="2018-10-09T10:40:10Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="beforeTest" is-config="true" duration-ms="14046" started-at="2018-10-10T02:28:23Z" finished-at="2018-10-10T02:28:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-10-09T10:40:10Z" finished-at="2018-10-09T10:40:10Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-10-10T02:28:37Z" finished-at="2018-10-10T02:28:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="login()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="login" duration-ms="992" started-at="2018-10-09T10:40:10Z" finished-at="2018-10-09T10:40:11Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="login" duration-ms="32841" started-at="2018-10-10T02:28:37Z" finished-at="2018-10-10T02:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-09T10:40:10Z" finished-at="2018-10-09T10:40:10Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-10-10T02:28:37Z" finished-at="2018-10-10T02:28:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-10-09T10:40:11Z" finished-at="2018-10-09T10:40:11Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-10-10T02:29:10Z" finished-at="2018-10-10T02:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-10-09T10:40:11Z" finished-at="2018-10-09T10:40:11Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="afterClass" is-config="true" duration-ms="1" started-at="2018-10-10T02:29:10Z" finished-at="2018-10-10T02:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-10-09T10:40:11Z" finished-at="2018-10-09T10:40:11Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-10-10T02:29:10Z" finished-at="2018-10-10T02:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:smart.Login_TestNG@66a3ffec]" name="afterSuite" is-config="true" duration-ms="2" started-at="2018-10-09T10:40:11Z" finished-at="2018-10-09T10:40:11Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:yahoo.com.Login@1e88b3c]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-10-10T02:29:10Z" finished-at="2018-10-10T02:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- smart.Login_TestNG -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- yahoo.com.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
