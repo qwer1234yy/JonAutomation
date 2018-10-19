@@ -27,4 +27,7 @@ public class Calculator {
      public int divide() {
     	 return a/b;
      }
+     public int divideByTest() {
+    	 return a/b;
+     }
 }
